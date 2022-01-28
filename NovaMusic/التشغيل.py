@@ -143,7 +143,7 @@ async def play(client, m: Message):
                 await huehue.delete()
                 # await m.reply_to_message.delete()
                 await m.reply_photo(
-                    photo="https://telegra.ph/file/b0b13433b8595ed385f07.jpg",
+                    photo="https://telegra.ph/file/cbefab50d720cd7cb5ca8.jpg",
                     caption=f"""
 **🏷️ العنوان : [{songname}]({link})
 💬 ايدي الدردشة : {chat_id}
@@ -162,7 +162,7 @@ async def play(client, m: Message):
                 await huehue.delete()
                 # await m.reply_to_message.delete()
                 await m.reply_photo(
-                    photo="https://telegra.ph/file/b0b13433b8595ed385f07.jpg",
+                    photo="https://telegra.ph/file/cbefab50d720cd7cb5ca8.jpg",
                     caption=f"""
 **▶ تم تشغيل الاغنية 
 **🏷️ العنوان : [{songname}]({link})
@@ -261,7 +261,7 @@ async def vplay(client, m: Message):
                 await huehue.delete()
                 # await m.reply_to_message.delete()
                 await m.reply_photo(
-                    photo="https://telegra.ph/file/b0b13433b8595ed385f07.jpg",
+                    photo="https://telegra.ph/file/cbefab50d720cd7cb5ca8.jpg",
                     caption=f"""
 #⃣ Video Di Antrian Ke {pos}
 **🏷️  العنوان : [{songname}]({url})
@@ -285,7 +285,7 @@ async def vplay(client, m: Message):
                 await huehue.delete()
                 # await m.reply_to_message.delete()
                 await m.reply_photo(
-                    photo="https://telegra.ph/file/b0b13433b8595ed385f07.jpg",
+                    photo="https://telegra.ph/file/cbefab50d720cd7cb5ca8.jpg",
                     caption=f"""
 **🏷️  العنوان : [{songname}]({url})
 💬 ايدي المحادثه : {chat_id}

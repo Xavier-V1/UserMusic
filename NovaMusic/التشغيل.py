@@ -145,9 +145,10 @@ async def play(client, m: Message):
                 await m.reply_photo(
                     photo="https://telegra.ph/file/cbefab50d720cd7cb5ca8.jpg",
                     caption=f"""
-**🏷️ العنوان : [{songname}]({link})
-💬 ايدي الدردشة : {chat_id}
-🎧 طلب من : {m.from_user.mention}**
+                    **تم تشغيل الاغنيه** 🌿💕
+**الاغـنـيه** 🌿💕 : [{songname}]({link})
+**ايدي الـمجـمـوعه** 🌿💕 : {chat_id}
+**طـلب مـن : {m.from_user.mention}** 🌿💕
 """,
                 )
             else:
@@ -164,10 +165,10 @@ async def play(client, m: Message):
                 await m.reply_photo(
                     photo="https://telegra.ph/file/cbefab50d720cd7cb5ca8.jpg",
                     caption=f"""
-**▶ تم تشغيل الاغنية 
-**🏷️ العنوان : [{songname}]({link})
-💬 ايدي الدردشة : {chat_id}
-🎧 طلب من : {m.from_user.mention}**
+                    **تم تشغيل الاغنيه** 🌿💕
+**الاغـنـيه** 🌿💕 : [{songname}]({link})
+**ايدي الـمجـمـوعه** 🌿💕 : {chat_id}
+**طـلب مـن : {m.from_user.mention}** 🌿💕
 """,
                 )
 
@@ -196,10 +197,10 @@ async def play(client, m: Message):
                         await m.reply_photo(
                             photo=f"{thumbnail}",
                             caption=f"""
-**🏷️  العنوان : [{songname}]({url})
-⏱️ المدة : {duration}
-💬 ايدي المحادثه : {chat_id}
-🎧 طلب من : {m.from_user.mention}**
+**الاغـنـيه** 🌿💕 : [{songname}]({link})
+**ايدي الـمجـمـوعه** 🌿💕 : {chat_id}
+**المـده** 🌿💕 : {duration}
+**طـلب مـن : {m.from_user.mention}** 🌿💕
 """,
                         )
                     else:
@@ -217,18 +218,18 @@ async def play(client, m: Message):
                             await m.reply_photo(
                                 photo=f"{thumbnail}",
                                 caption=f"""
-**▶ بدأ تشغيل الاغنية
-**🏷️  العنوان : [{songname}]({url})
-⏱️ المدة : {duration}
-💬 ايدي المحادثه : {chat_id}
-🎧 طلب من : {m.from_user.mention}**
+**تم تشغيل الاغنيه** 🌿💕
+**الاغـنـيه** 🌿💕 : [{songname}]({link})
+**ايدي الـمجـمـوعه** 🌿💕 : {chat_id}
+**المـده** 🌿💕 : {duration}
+**طـلب مـن : {m.from_user.mention}** 🌿💕
 """,
                             )
                         except Exception as ep:
                             await huehue.edit(f"`{ep}`")
 
 
-@Client.on_message(filters.command(["فيديو"], prefixes=f"{HNDLR}"))
+@Client.on_message(filters.command(["شغل فيديو"], prefixes=f"{HNDLR}"))
 async def vplay(client, m: Message):
     replied = m.reply_to_message
     chat_id = m.chat.id
@@ -264,9 +265,9 @@ async def vplay(client, m: Message):
                     photo="https://telegra.ph/file/cbefab50d720cd7cb5ca8.jpg",
                     caption=f"""
 #⃣ Video Di Antrian Ke {pos}
-**🏷️  العنوان : [{songname}]({url})
-💬 ايدي المحادثه : {chat_id}
-🎧 طلب من : {m.from_user.mention}**
+**الاغـنـيه** 🌿💕 : [{songname}]({link})
+**ايدي الـمجـمـوعه** 🌿💕 : {chat_id}
+**طـلب مـن : {m.from_user.mention}** 🌿💕
 """,
                 )
             else:
@@ -287,9 +288,9 @@ async def vplay(client, m: Message):
                 await m.reply_photo(
                     photo="https://telegra.ph/file/cbefab50d720cd7cb5ca8.jpg",
                     caption=f"""
-**🏷️  العنوان : [{songname}]({url})
-💬 ايدي المحادثه : {chat_id}
-🎧 طلب من : {m.from_user.mention}**
+**الاغـنـيه** 🌿💕 : [{songname}]({link})
+**ايدي الـمجـمـوعه** 🌿💕 : {chat_id}
+**طـلب مـن : {m.from_user.mention}** 🌿💕
 """,
                 )
 
@@ -325,10 +326,10 @@ async def vplay(client, m: Message):
                         await m.reply_photo(
                             photo=f"{thumbnail}",
                             caption=f"""
-**🏷️  العنوان : [{songname}]({url})
-⏱️ المدة : {duration}
-💬 ايدي المحادثه : {chat_id}
-🎧 طلب من : {m.from_user.mention}**
+**الاغـنـيه** 🌿💕 : [{songname}]({link})
+**ايدي الـمجـمـوعه** 🌿💕 : {chat_id}
+**المـده** 🌿💕 : {duration}
+**طـلب مـن : {m.from_user.mention}** 🌿💕
 """,
                         )
                     else:
@@ -344,10 +345,10 @@ async def vplay(client, m: Message):
                             await m.reply_photo(
                                 photo=f"{thumbnail}",
                                 caption=f"""
-**🏷️  العنوان : [{songname}]({url})
-⏱️ المدة : {duration}
-💬 ايدي المحادثه : {chat_id}
-🎧 طلب من : {m.from_user.mention}**
+**الاغـنـيه** 🌿💕 : [{songname}]({link})
+**ايدي الـمجـمـوعه** 🌿💕 : {chat_id}
+**المـده** 🌿💕 : {duration}
+**طـلب مـن : {m.from_user.mention}** 🌿💕
 """,
                             )
                         except Exception as ep:
@@ -393,21 +394,21 @@ async def playfrom(client, m: Message):
                     await m.reply_photo(
                         photo="https://telegra.ph/file/cbefab50d720cd7cb5ca8.jpg",
                         caption=f"""
-**▶ ابدأ تشغيل الأغاني من {chat}
-🏷️ العنوان : [{songname}]({link})
-💬 الدردشة : {chat_id}
-🎧 من الطلب : {m.from_user.mention}**
+**ابدأ تشغيل الأغاني من** 🌿💕 {chat}
+الاغـنـيه 🌿💕 : [{songname}]({link})
+ايدي الـمجـمـوعه 🌿💕 : {chat_id}
+طـلب مـن : {m.from_user.mention} 🌿💕
 """,                  
          )
             await hmm.delete()
             await m.reply(  
-                   f"➕ يضيف {lmt} أغنية في قائمة الانتظار \n• ارسل {HNDLR}التشغيل_التلقائي لاضاف اغنيه في القائمه الانتضار**" 
+                   f"➕ يضيف {lmt} أغنية في قائمة الانتظار \n• ارسل {HNDLR}التشغيل_التلقائي لاضاف اغنيه في القائمه الانتظار**" 
                          )
         except Exception as e:
             await hmm.edit(f"**هناك خطا ** \n`{e}`")
 
 
-@Client.on_message(filters.command(["القائمة", "قائمه التشغيل"], prefixes=f"{HNDLR}"))
+@Client.on_message(filters.command(["القائمه", "قائمه التشغيل"], prefixes=f"{HNDLR}"))
 async def playlist(client, m: Message):
     chat_id = m.chat.id
     if chat_id in QUEUE:

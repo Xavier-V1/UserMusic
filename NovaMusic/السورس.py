@@ -111,8 +111,7 @@ By : @K_P_S_6
 
 @Client.on_message(filters.command(["السورس","الريبو","سورس"], prefixes=f"{HNDLR}"))
 async def repo(client, martin: Message):
-    await m.delete()
-    
+    await martin.delete()    
     keyboard = InlineKeyboardMarkup(
         [
             [

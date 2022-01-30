@@ -109,9 +109,19 @@ By : @K_P_S_6
     await m.reply(HEPZ)
 
 
-@Client.on_message(filters.command(["السورس","الريبو"], prefixes=f"{HNDLR}"))
-async def repo(client, m: Message):
+@Client.on_message(filters.command(["السورس","الريبو","سورس"], prefixes=f"{HNDLR}"))
+async def repo(client, martin: Message):
     await m.delete()
+    
+    keyboard = InlineKeyboardMarkup(
+        [
+            [
+                InlineKeyboardButton("# 𝙏𝙀𝘼𝙈 𝙉𝙊𝙑𝘼", url=f"https://t.me/O_A_V"),
+                InlineKeyboardButton("# 𝙎𝙊𝙐𝙍𝘾𝙀", url=f"https://t.me/K_P_S_6"),
+            ]
+        ]
+    )
+
     REPZ = f"""
 - هيي ي قلب  {m.from_user.mention} 🌿💕
                                    ​​​​​​​​​​​  ​​​​​​​​​​​​​​​​​​​​​​​​​​✫
@@ -126,4 +136,8 @@ async def repo(client, m: Message):
 📚 • قناة نوفـا  : @K_P_S_6
                                    ​​​​​​​​​​​  ​​​​​​​​​​​​​​​​​​​​​​​​​​✫                                   
 """
-    await m.reply(REPZ, disable_web_page_preview=True)
+    await martin.reply_photo(
+        photo=f"{ALIVE_IMG}",
+        caption=REPZ,
+        reply_markup=keyboard,
+    )

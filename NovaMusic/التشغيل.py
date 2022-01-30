@@ -128,7 +128,7 @@ async def play(client, m: Message):
     if replied:
         if replied.audio or replied.voice:
             await m.delete()
-            huehue = await replied.reply("**🔄 تتم تشغيل انتظر قليلا**")
+            huehue = await replied.reply("**ويـت ي قـلب 🌿💕**")
             dl = await replied.download()
             link = replied.link
             if replied.audio:
@@ -174,10 +174,10 @@ async def play(client, m: Message):
 
     else:
         if len(m.command) < 2:
-            await m.reply("يجب عليك الرد على الاغنيه او وضع اسمها مع الامر")
+            await m.reply("اكـتب اسـم الاغـنيـه او هـات ريـب عـلي اغـنيه او لـينك يـوتـيوب 🌿💕")
         else:
             await m.delete()
-            huehue = await m.reply("🔎 جاري البحث الرجاء الانتظار ")
+            huehue = await m.reply("**ويـت ي قـلب 🌿💕**")
             query = m.text.split(None, 1)[1]
             search = ytsearch(query)
             if search == 0:
@@ -237,7 +237,7 @@ async def vplay(client, m: Message):
     if replied:
         if replied.video or replied.document:
             await m.delete()
-            huehue = await replied.reply("**🔄 تتم العملية**")
+            huehue = await replied.reply("**ويـت ي قـلب 🌿💕**")
             dl = await replied.download()
             link = replied.link
             if len(m.command) < 2:
@@ -297,18 +297,18 @@ async def vplay(client, m: Message):
     else:
         if len(m.command) < 2:
             await m.reply(
-                "**يجب الرد على الفيديو او وضع الاسم للبحث عنها وتشغيلها**"
+                "**اكـتب اسـم الـفـيـد او هـات ريـب عـلي فـيـد او لـينك يـوتـيوب 🌿💕**"
             )
         else:
             await m.delete()
-            huehue = await m.reply("**🔎 Pencarian")
+            huehue = await m.reply("**ويـت ي قـلب 🌿💕**")
             query = m.text.split(None, 1)[1]
             search = ytsearch(query)
             Q = 720
             hmmm = HighQualityVideo()
             if search == 0:
                 await huehue.edit(
-                    "**لم يتم العثور على شيء من البحث المعطى**"
+                    "**- لم يتم العثور على شيء **"
                 )
             else:
                 songname = search[0]

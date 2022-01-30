@@ -63,7 +63,7 @@ async def restart(client, m: Message):
     quit()
 
 
-@Client.on_message(filters.command(["الاوامر"], prefixes=f"{HNDLR}"))
+@Client.on_message(filters.command(["الاوامر","اوامر الاغاني"], prefixes=f"{HNDLR}"))
 async def help(client, m: Message):
     await m.delete()
     HEPZ = f"""
@@ -131,4 +131,14 @@ async def repo(client, martin: Message):
     await martin.reply_photo(
         photo=f"https://telegra.ph/file/ad4ede69d64e5640abd7d.jpg",
         caption=REPZ,
+    )
+    
+    
+@Client.on_message(filters.command(["مارتن","ايزلا","اكسافير"], prefixes=f"{HNDLR}"))
+async def repo(client, martin: Message):
+    await martin.delete()    
+    MARTIN = f"𝙳𝙴𝚅 𝙼𝙰𝚁𝚃𝙸𝙽 : @E_J_W"
+    await martin.reply_photo(
+        photo=f"https://telegra.ph/file/12e7a39967ea99f8f24d1.jpg",
+        caption=MARTIN,
     )

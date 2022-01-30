@@ -120,7 +120,7 @@ async def ytdl(link):
         return 0, stderr.decode()
 
 
-@Client.on_message(filters.command(["شغل"], prefixes=f"{HNDLR}"))
+@Client.on_message(filters.command(["شغل","تشغيل"], prefixes=f"{HNDLR}"))
 async def play(client, m: Message):
     replied = m.reply_to_message
     chat_id = m.chat.id
@@ -195,7 +195,7 @@ async def play(client, m: Message):
                         pos = add_to_queue(chat_id, songname, ytlink, url, "Audio", 0)
                         await huehue.delete()
                         await m.reply_photo(
-                            photo=f"{thumbnail}",
+                            photo=f"https://telegra.ph/file/cbefab50d720cd7cb5ca8.jpg",
                             caption=f"""
 **الاغـنـيه** 🌿💕 : [{songname}]({link})
 **ايدي الـمجـمـوعه** 🌿💕 : {chat_id}
@@ -229,7 +229,7 @@ async def play(client, m: Message):
                             await huehue.edit(f"`{ep}`")
 
 
-@Client.on_message(filters.command(["شغل فيديو"], prefixes=f"{HNDLR}"))
+@Client.on_message(filters.command(["شغل فيديو","تشغيل فيديو","تشغيل_فيديو"], prefixes=f"{HNDLR}"))
 async def vplay(client, m: Message):
     replied = m.reply_to_message
     chat_id = m.chat.id

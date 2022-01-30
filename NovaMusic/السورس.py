@@ -113,14 +113,6 @@ By : @K_P_S_6
 @Client.on_message(filters.command(["السورس","الريبو","سورس"], prefixes=f"{HNDLR}"))
 async def repo(client, martin: Message):
     await martin.delete()    
-    keyboard = InlineKeyboardMarkup(
-        [
-            [
-                InlineKeyboardButton("# 𝙏𝙀𝘼𝙈 𝙉𝙊𝙑𝘼", url=f"https://t.me/O_A_V"),
-                InlineKeyboardButton("# 𝙎𝙊𝙐𝙍𝘾𝙀", url=f"https://t.me/K_P_S_6"),
-            ]
-        ]
-    )
 
     REPZ = f"""
 - هيي ي قلب. 🌿💕
@@ -139,5 +131,4 @@ async def repo(client, martin: Message):
     await martin.reply_photo(
         photo=f"https://telegra.ph/file/ad4ede69d64e5640abd7d.jpg",
         caption=REPZ,
-        reply_markup=keyboard,
     )

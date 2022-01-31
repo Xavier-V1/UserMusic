@@ -195,7 +195,7 @@ async def play(client, m: Message):
                         pos = add_to_queue(chat_id, songname, ytlink, url, "Audio", 0)
                         await huehue.delete()
                         await m.reply_photo(
-                            photo=f"https://telegra.ph/file/cbefab50d720cd7cb5ca8.jpg",
+                            photo=f"{thumbnail}",
                             caption=f"""
 **الاغـنـيه** 🌿💕 : [{songname}]({link})
 **ايدي الـمجـمـوعه** 🌿💕 : {chat_id}

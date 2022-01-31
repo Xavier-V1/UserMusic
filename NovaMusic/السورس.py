@@ -49,16 +49,16 @@ async def ping(client, m: Message):
 )
 async def restart(client, m: Message):
     await m.delete()
-    jmthon = await m.reply("1")
-    await jmthon.edit("2")
-    await jmthon.edit("3")
-    await jmthon.edit("4")
-    await jmthon.edit("5")
-    await jmthon.edit("6")
-    await jmthon.edit("7")
-    await jmthon.edit("8")
-    await jmthon.edit("9")
-    await jmthon.edit("**تم اعادة تشغيل سورس نوفـا ميوزك بنجاح ✓**")
+    noovaa = await m.reply("1")
+    await noovaa.edit("2")
+    await noovaa.edit("3")
+    await noovaa.edit("4")
+    await noovaa.edit("5")
+    await noovaa.edit("6")
+    await noovaa.edit("7")
+    await noovaa.edit("8")
+    await noovaa.edit("9")
+    await noovaa.edit("**تم اعادة تشغيل سورس نوفـا ميوزك بنجاح ✓**")
     os.execl(sys.executable, sys.executable, *sys.argv)
     quit()
 
@@ -109,6 +109,17 @@ By : @K_P_S_6
 """
     await m.reply(HEPZ)
 
+    
+    
+@Client.on_message(filters.command(["مارتن","ايزلا","اكسافير"], prefixes=f"{HNDLR}"))
+async def repo(client, mes: Message):
+    await mes.delete()    
+
+    await mes.reply_photo(
+        photo=f"https://telegra.ph/file/12e7a39967ea99f8f24d1.jpg",
+        caption=f"𝙳𝙴𝚅 𝙼𝙰𝚁𝚃𝙸𝙽 : @E_J_W",
+    )
+
 
 @Client.on_message(filters.command(["السورس","الريبو","سورس"], prefixes=f"{HNDLR}"))
 async def repo(client, martin: Message):
@@ -131,14 +142,4 @@ async def repo(client, martin: Message):
     await martin.reply_photo(
         photo=f"https://telegra.ph/file/ad4ede69d64e5640abd7d.jpg",
         caption=REPZ,
-    )
-    
-    
-@Client.on_message(filters.command(["مارتن","ايزلا","اكسافير"], prefixes=f"{HNDLR}"))
-async def repo(client, martin: Message):
-    await martin.delete()    
-    MARTIN = f"𝙳𝙴𝚅 𝙼𝙰𝚁𝚃𝙸𝙽 : @E_J_W"
-    await martin.reply_photo(
-        photo=f"https://telegra.ph/file/12e7a39967ea99f8f24d1.jpg",
-        caption=MARTIN,
     )

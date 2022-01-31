@@ -5,7 +5,6 @@ from time import time
 
 from pyrogram import Client, filters
 from pyrogram.types import Message
-from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 
 from config import HNDLR, SUDO_USERS
 

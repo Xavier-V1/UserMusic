@@ -108,17 +108,6 @@ By : @K_P_S_6
 """
     await m.reply(HEPZ)
 
-    
-    
-@Client.on_message(filters.command(["مارتن","ايزلا","اكسافير"], prefixes=f"{HNDLR}"))
-async def repo(client, mes: Message):
-    await mes.delete()    
-
-    await mes.reply_photo(
-        photo=f"https://telegra.ph/file/12e7a39967ea99f8f24d1.jpg",
-        caption=f"𝙳𝙴𝚅 𝙼𝙰𝚁𝚃𝙸𝙽 : @E_J_W",
-    )
-
 
 @Client.on_message(filters.command(["السورس","الريبو","سورس"], prefixes=f"{HNDLR}"))
 async def repo(client, martin: Message):
